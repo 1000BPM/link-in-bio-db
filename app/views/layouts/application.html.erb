@@ -8,6 +8,88 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+     <style>
+      /*
+      * {
+        border: 3px red dashed;
+      }
+      */
+      html {
+        min-height: 100%;
+      }
+      
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: conic-gradient(from 45deg at 70% -10%, #fff700, #f4f71a, #a4f663, #00ccd1, #724aa8, #6c1035, #5c0107, #590000); /* made at https://learnui.design/tools/gradient-generator.html */
+        color: rgba(255, 255, 255, 1.0);
+        font-family: "Helvetica";
+        font-weight: 700;
+        font-size: 20px;
+        font-family: "Merriweather";
+      }
+
+      a {
+        color: rgba(255, 255, 255, 1.0);
+        text-decoration: none;
+      }
+
+      .main-container {
+          max-width: 640px;
+          margin: auto;
+      }
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .item {
+        background-color: rgba(61, 168, 241, 0.3);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 10px 10px 29px -5px rgba(0,0,0,0.75)
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Eczar";
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+
+    </style>
+
   </head>
 
   <body>
